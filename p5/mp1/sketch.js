@@ -39,7 +39,7 @@ function draw() {
   line(0, 87, width, 87);
   textSize(40)
   textAlign(CENTER, BOTTOM);
-  text('Gelbo likes exploring. He has a sword but I dont think he even knows how to use it. He just thinks it makes him look cool. Hopefully he doesnt get in any real fights *wink*', 0, height*3/4, width);
+  text('Gelbo likes exploring. He has a sword but I don\'t think he even knows how to use it. He just thinks it makes him look cool. Hopefully he doesn\'t get in any real fights *wink*', 0, height*3/4, width);
 
 
 
