@@ -30,6 +30,17 @@ function draw() {
   ellipse(width/2 + positionX + 35, height/2 + positionY + 30, 20, 20)
   ellipse(width/2 + positionX + 80, height/2 + positionY + 30, 20, 20)
 
+  line(0, 12, width, 12);
+  textSize(100)
+  textAlign(CENTER, TOP);
+  text('Gelbo - The Slime Boy', 0, 12, width);
+
+  fill(255)
+  line(0, 87, width, 87);
+  textSize(40)
+  textAlign(CENTER, BOTTOM);
+  text('Gelbo likes exploring. He has a sword but I dont think he knows how to use it. He just thinks it makes him look cool. Hopefully he doesnt get in any real fights *wink*', 0, height*3/4, width);
+
 
 
 
@@ -62,7 +73,7 @@ function draw() {
 
     }
 
-    fill(220)
+    fill(200, 200, 250)
     noStroke()
     rect(width/2 - 160, height/2 + 20, 120, 8)
     rect(width/2 - 160, height/2 + 50, 120, 8)
