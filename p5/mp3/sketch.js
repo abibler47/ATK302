@@ -4,8 +4,9 @@ var birds = [];
 var birdPics = [];
 var myCar1, myCar2, myCar3;
 var gelboPos;
-var myState = 0
+var myState = 0;
 var splash;
+var birdAmt = 20;
 
 function setup() {
   createCanvas(800, 800);
@@ -23,7 +24,7 @@ function setup() {
 
   bird = bird1;
   //fly = loadImage('assets/fly.png');
-  for (var i = 0; i < 30; i++) {
+  for (var i = 0; i < birdAmt; i++) {
     birds[i] = new Bird();
   }
 
@@ -116,6 +117,7 @@ function draw() {
 
 
     }
+
   }
 
   function keyPressed() {
@@ -133,5 +135,15 @@ function draw() {
   function mouseReleased() {
     if(myState == 0) {
       myState = 1;
+    }
+    else if(myState = 2) {
+      birdAmt = birdAmt + 10
+
+      for (var i = 0; i < birdAmt; i++) {
+        var j = new Bird();
+        splice(i, j, 1)
+        birds[i] = new Bird();
+      }
+      myState = 0
     }
   }
