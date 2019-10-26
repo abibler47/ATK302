@@ -1,34 +1,37 @@
 var gelboRight, gelboLeft, gelbo;
-var bird1, bird2, bird3, bird;
 var birds = [];
 var birdPics = [];
-var myCar1, myCar2, myCar3;
 var gelboPos;
 var myState = 0;
-var splash;
-var birdAmt = 20;
+var splash, win, end;
+var birdAmt = 10;
+var timer = 500;
+var level = 1;
 
 function setup() {
   createCanvas(800, 800);
   splash = loadImage('assets/gelboSplash.jpg')
+  win = loadImage('assets/youwin.jpg')
+  end = loadImage('assets/gamaovar.jpg')
   gelboLeft = loadImage('assets/gelboLeft.png');
   gelboRight = loadImage('assets/gelboRight.png');
   gelbo = gelboLeft;
-  birdPics[0] = loadImage('assets/bird1.png');
-  birdPics[1] = loadImage('assets/bird2.png');
-  birdPics[2] = loadImage('assets/bird3.png');
-  birdPics[3] = loadImage('assets/bird4.png');
-  birdPics[4] = loadImage('assets/bird5.png');
-  birdPics[5] = loadImage('assets/bird6.png');
-  birdPics[6] = loadImage('assets/bird7.png');
+  birdPics[0] = loadImage('assets/star1.png');
+  birdPics[1] = loadImage('assets/star2.png');
+  birdPics[2] = loadImage('assets/star3.png');
+  birdPics[3] = loadImage('assets/star4.png');
+  birdPics[4] = loadImage('assets/star5.png');
+  birdPics[5] = loadImage('assets/star6.png');
 
-  bird = bird1;
+  // bird = bird1;
   //fly = loadImage('assets/fly.png');
   for (var i = 0; i < birdAmt; i++) {
     birds[i] = new Bird();
   }
 
   gelboPos = createVector(width / 2, height - 80);
+
+  timer = 500;
 
 }
 
@@ -37,33 +40,48 @@ function draw() {
 
   switch (myState) {
     case 0:
+      imageMode(CORNER)
       background(splash);
       break;
 
     case 1:
       background(200)
 
+
       for (var i = 0; i < birds.length; i++) {
         birds[i].display();
         birds[i].fly();
-        if (birds[i].pos.dist(gelboPos) < 25) {
+        if (birds[i].pos.dist(gelboPos) < 50) {
           myState = 2;
 
         }
+
+      }
+
+      timer--;
+      if(timer == 0) {
+        myState = 3;
       }
 
 
       imageMode(CENTER);
       image(gelbo, gelboPos.x, gelboPos.y, 50, 50)
+      textSize(30)
+      text(timer, 10, 30)
+      text("level " + level, 10, 60)
 
       checkForKeys();
       break;
 
     case 2:
-      background(120, 0, 0);
-      fill('white');
-      textSize(100);
-      text("game over", 300, 100);
+      imageMode(CORNER)
+      background(end);
+
+      break;
+
+    case 3:
+      imageMode(CORNER)
+      background(win);
 
       break;
     }
@@ -130,14 +148,19 @@ function draw() {
     if (keyIsDown(RIGHT_ARROW)) gelboPos.x = gelboPos.x + 5;
     if (keyIsDown(UP_ARROW)) gelboPos.y = gelboPos.y - 5;
     if (keyIsDown(DOWN_ARROW)) gelboPos.y = gelboPos.y + 5;
+    if (keyIsDown(80)) myState = 3;
   }
 
   function mouseReleased() {
     if(myState == 0) {
       myState = 1;
     }
-    else if(myState = 2) {
-      birdAmt = birdAmt + 10
+    else if(myState == 2) {
+      birdAmt = 10;
+      gelboPos = createVector(width / 2, height - 80);
+      level = 1;
+      timer = 500;
+
 
       for (var i = 0; i < birdAmt; i++) {
         var j = new Bird();
@@ -145,5 +168,18 @@ function draw() {
         birds[i] = new Bird();
       }
       myState = 0
+    }
+    else if(myState == 3) {
+      birdAmt = birdAmt + 10
+      gelboPos = createVector(width / 2, height - 80);
+      level++;
+      timer = 500;
+
+      for (var i = 0; i < birdAmt; i++) {
+        var j = new Bird();
+        splice(i, j, 1)
+        birds[i] = new Bird();
+      }
+      myState = 1
     }
   }
