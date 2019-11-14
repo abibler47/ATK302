@@ -21,7 +21,7 @@ function setup() {
   watchPosition(positionChanged);
 
 
-  fence = new geoFence(locationData.latitude, locationData.longitude, .05, insideTheFence, outsideTheFence, 'mi');
+  fence = new geoFenceCircle(locationData.latitude, locationData.longitude, .05, insideTheFence, outsideTheFence, 'mi');
 }
 
 function draw() {
