@@ -47,18 +47,7 @@ function draw() {
 
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
-  textAlign(LEFT);
-  textSize(20);
-  fill('black');
-  text("orientation data:", 25, 25);
-  textSize(15);
-  text("alpha: " + alpha, 25, 50);
-  text("beta: " + beta, 25, 70);
-  text("gamma: " + gamma, 25, 90);
-  textSize(20);
-  text("acceleration data:", 25, 125);
-  textSize(15);
-  text("permissionState =" + pstate1 + ", " + pstate2, 25, 145) ;
+
 
 }
 
@@ -95,6 +84,20 @@ function Place(lat, long, desc, radius, reggieImg) {
     image(reggieImg, 10, 10);
     textSize(20);
     text("You are totally at " + this.desc, 10, 240);
+
+    textAlign(LEFT);
+    textSize(20);
+    fill('black');
+    text("orientation data:", 25, 25);
+    textSize(15);
+    text("alpha: " + alpha, 25, 50);
+    text("beta: " + beta, 25, 70);
+    text("gamma: " + gamma, 25, 90);
+    textSize(20);
+    text("acceleration data:", 25, 125);
+    textSize(15);
+    text("permissionState =" + pstate1 + ", " + pstate2, 25, 145) ;
+
   }
 }
 
