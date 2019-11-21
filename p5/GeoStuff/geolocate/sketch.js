@@ -64,10 +64,12 @@ function draw() {
 
   if((alpha < 120) && (alpha > 80)) {
     text("ghost!!!!!!!!!", 25, 175);
+    console.log("ghost");
 
   }
   else {
     text("no ghost", 25, 175);
+    console.log("ghost");
   }
 
 
