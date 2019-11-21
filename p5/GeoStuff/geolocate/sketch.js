@@ -69,7 +69,7 @@ function draw() {
   }
   else {
     text("no ghost", 25, 175);
-    console.log("ghost");
+    console.log("no ghost");
   }
 
 
