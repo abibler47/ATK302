@@ -81,6 +81,8 @@ function Place(lat, long, desc, radius, reggieImg) {
 
 
   this.display = function() {
+    background(150);
+
     image(reggieImg, 10, 10);
     textSize(20);
     text("You are totally at " + this.desc, 10, 240);
