@@ -62,6 +62,10 @@ function draw() {
   textSize(15);
   text("permissionState =" + pstate1 + ", " + pstate2, 25, 145) ;
 
+  if(alpha < 120 && alpha > 80) {
+    text("ghost!!!!!!!!!", 25, 175);
+  }
+
 
 }
 
@@ -101,9 +105,7 @@ function Place(lat, long, desc, radius, reggieImg) {
     textSize(20);
     text("You are totally at " + this.desc, 10, 240);
 
-    if(alpha < 120 && alpha > 80) {
-      text("ghost!!!!!!!!!", width/2, height/2);
-    }
+
 
 
   }
