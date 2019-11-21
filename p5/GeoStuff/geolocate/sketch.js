@@ -101,6 +101,9 @@ function Place(lat, long, desc, radius, reggieImg) {
     textSize(20);
     text("You are totally at " + this.desc, 10, 240);
 
+    if(alpha < 120 && alpha > 80) {
+      text("ghost!!!!!!!!!", width/2, height/2);
+    }
 
 
   }
