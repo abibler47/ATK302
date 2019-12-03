@@ -90,6 +90,7 @@ function positionPing(position) {
   for (var i = 0; i < places.length; i++) {
     if (places[i].fence.insideFence === true && ghost == true){
       places[i].display();
+
       break; //should break out of the for loop?
       //text(places[i].desc + ' check1 ' + places[i].fence.insideFence, 10, 240 + (i * 28));
     }
@@ -109,7 +110,7 @@ function Place(lat, long, desc, radius, reggieImg) {
 
   this.display = function() {
 
-
+    console.log("hi");
     image(reggieImg, 10, 10);
     textSize(20);
     text("You are totally at " + this.desc, 10, 240);
