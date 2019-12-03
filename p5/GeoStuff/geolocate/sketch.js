@@ -7,6 +7,7 @@ var reggieImg;
 var alpha, beta, gamma; // orientation data
 var pstate1 = false ;
 var pstate2 = false ;
+var ghost = false;
 
 function preload() {
   locationData = getCurrentPosition();
@@ -65,11 +66,13 @@ function draw() {
   if((alpha < 120) && (alpha > 80)) {
     text("ghost!!!!!!!!!", 25, 175);
     console.log("ghost");
+    ghost = true;
 
   }
   else {
     text("no ghost", 25, 175);
     console.log("no ghost");
+    ghost = false;
   }
 
 
@@ -85,7 +88,7 @@ function positionPing(position) {
   distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
 
   for (var i = 0; i < places.length; i++) {
-    if (places[i].fence.insideFence === true){
+    if (places[i].fence.insideFence === true && ghost == true){
       places[i].display();
       break; //should break out of the for loop?
       //text(places[i].desc + ' check1 ' + places[i].fence.insideFence, 10, 240 + (i * 28));
