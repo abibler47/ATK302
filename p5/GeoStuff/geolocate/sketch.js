@@ -48,7 +48,7 @@ function draw() {
 
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
-  background('red');
+  // background('red');
 
   textAlign(LEFT);
   textSize(20);
