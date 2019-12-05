@@ -93,9 +93,16 @@ function draw() {
     case 0:
     if((alpha > alphaGhost) && (alpha < alphaGhost + 30) && (beta > betaGhost) && (beta < betaGhost + 30) ) {
       myState = 1;
+      text("ghost!!!!!!!!!", 25, 175);
+
 
 
     }
+    else {
+      text("no ghost", 25, 175);
+      // console.log("no ghost");
+    }
+
       break;
 
     case 1:
