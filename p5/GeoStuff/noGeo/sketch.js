@@ -58,7 +58,7 @@ function setup() {
   beta = 0;
   gamma = 0;
   alphaGhost = random(330);
-  betaGhost = random(150); 
+  betaGhost = random(150);
 
 }
 
@@ -86,6 +86,8 @@ function draw() {
   text("acceleration data:", 25, 125);
   textSize(15);
   text("permissionState =" + pstate1 + ", " + pstate2, 25, 145) ;
+
+  text("Ghost is around " + alphaGhost + " alpha, " betaGhost "beta", 25, 200)
 
   switch (myState) {
     case 0:
