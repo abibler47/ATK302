@@ -58,7 +58,7 @@ function setup() {
   beta = 0;
   gamma = 0;
   alphaGhost = random(330);
-  betaGhost = random(150);
+  betaGhost = random(150); 
 
 }
 
