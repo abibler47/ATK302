@@ -87,7 +87,7 @@ function draw() {
   textSize(15);
   text("permissionState =" + pstate1 + ", " + pstate2, 25, 145) ;
 
-  text("Ghost is around " + alphaGhost + " alpha, " + betaGhost + "beta", 25, 200)
+  text("Ghost is around " + alphaGhost + " alpha, " + betaGhost + " beta", 25, 200)
 
   switch (myState) {
     case 0:
@@ -107,7 +107,7 @@ function draw() {
 
     case 2:
       textSize(12);
-      text(stories[round(random(stories.length) - 0.5)].story);
+      text(stories[round(random(stories.length) - 0.5)].story, 25, 220);
       break;
   }
 
