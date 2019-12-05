@@ -38,21 +38,21 @@ function setup() {
   // places.push(new Place(40.50947612369081, -88.99174125561485, "Edwards Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
   // places.push(new Place(40.51014656358694, -88.9912748009074, "Felmley Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
 
-  stories.push(new Story("Welcome to Edwards Hall! This beautiful building located on the Northwest side of the campus is home to the School of Nursing and the Charles L. Capen Auditorium. The auditorium was named after Capen, who was a prominent lawyer within the Bloomington/Normal area. However, while this man was well respected, he has a dark past. Legend has it that Capen did not die peacefully with his wife and kids at his side, but rather a more sinister way. Capen was accused of stealing money from his children. While he was a very successful man, he wasn’t perfect. His kids didn’t take too kindly to this. His children murdered him in his home in Bloomington. After his death, the auditorium was named after him and his contributions. His children, still furious with his actions, decided to punish the university for naming the auditorium after their father. They dug up his body and stowed it away somewhere within the building (the location is still unknown). People report hearing strange sounds throughout the building and strange single room power outages."))
+  stories.push(new Story("Welcome to Edwards Hall! This beautiful building located on \nthe Northwest side of the campus is home to the School of \nNursing and the Charles L. Capen Auditorium. The auditorium \nwas named after Capen, who was a prominent lawyer \nwithin the Bloomington/Normal area. However, while this \nman was well respected, he has a dark past. Legend has \nit that Capen did not die peacefully with his wife and kids \nat his side, but rather a more sinister way. Capen was\n accused of stealing money from his children. While he was a \nvery successful man, he wasn’t perfect. His kids \ndidn’t take too kindly to this. His children murdered \nhim in his home in Bloomington. After his death, the \nauditorium was named after him and his contributions. \nHis children, still furious with his actions, decided to \npunish the university for naming the auditorium after \ntheir father. They dug up his body and stowed it away \nsomewhere within the building (the location is still unknown). \nPeople report hearing strange sounds throughout the \nbuilding and strange single room power outages."))
 
-  stories.push(new Story("Cook hall is a one-of-a-kind building located on the west side of campus and houses the school of music. The building used to be the former gymnasium in the school. However, students have been reporting strange occurrences in the building for years. Some rooms dipping in temperature drastically in a short period of time, strange noises, rooms being rearranged in mere seconds while students and staff leave the room. Something strange is going on. Well, according to ISU lore, a construction worker who was on the project when the building was being created was accidentally buried beneath the building’s foundation causing him to suffocate to death. His body has never been recovered and supposedly haunts the building even to this day."))
+  stories.push(new Story("Cook hall is a one-of-a-kind building located on the west \nside of campus and houses the school of music. The \nbuilding used to be the former gymnasium in the school. \nHowever, students have been reporting strange occurrences \nin the building for years. Some rooms dipping in \ntemperature drastically in a short period of time, \nstrange noises, rooms being rearranged in mere seconds \nwhile students and staff leave the room. Something \nstrange is going on. Well, according to ISU lore, \na construction worker who was on the project when the \nbuilding was being created was accidentally buried \nbeneath the building’s foundation causing him to suffocate \nto death. His body has never been recovered and supposedly \nhaunts the building even to this day."))
 
-  stories.push(new Story("Fell Hall. THe structure that houses the academic and administrative space on campus. The building, while beautiful, has a sinister past behind it. Fell used to be a dormitory building on campus. Back in 1903, Jonathan Davis, an Elementary Education student at the school, mysteriously disappeared one day. His body was found in the basement of the building three weeks later. The autopsy ruled natural causes as the cause of death, but rumors started spreading that Davis was murdered with ricin and stowed away in the building. While this is not what the official ruling of death, legend has it that he still haunts the building and other nearby parts of campus as well."))
+  stories.push(new Story("Fell Hall. The  structure that houses the academic and \nadministrative space on campus. The building, while \nbeautiful, has a sinister past behind it. Fell used to \nbe a dormitory building on campus. Back in 1903, \nJonathan Davis, an Elementary Education student at \nthe school, mysteriously disappeared one day. His body \nwas found in the basement of the building three weeks \nlater. The autopsy ruled natural causes as the cause \nof death, but rumors started spreading that Davis \nwas murdered with ricin and stowed away in the \nbuilding. While this is not what the official ruling of \ndeath, legend has it that he still haunts the building and \nother nearby parts of campus as well."))
 
-  stories.push(new Story("Legend has it the spirit of the old librarian, Ange Milner, roams the old bookstacks of Williams Hall. The bookstacks, which are now mostly empty aside from the buildup of dust over the years and old book pages found laying around, used to house old books. The books have since been relocated to a warehouse off-campus."))
+  stories.push(new Story("Legend has it the spirit of the old librarian, Ange Milner, \nroams the old bookstacks of Williams Hall. The \nbookstacks, which are now mostly empty aside from the \nbuildup of dust over the years and old book pages \nfound laying around, used to house old books. The books \nhave since been relocated to a warehouse off-campus."))
 
-  stories.push(new Story("The Old Union Building is home to the School of Information Technology, the Web and Interactive Communications office, and WGLT Radio.The Old Union Building opened in 1956 and was the original student union on campus. It has also been called the Educational Media Building and Media Services.President Strand named this building Old Union in the 1990s. But we call that connecting to spirit world. Which the old technology built to connecting you to see the world that not exist in the reality."))
+  stories.push(new Story("The Old Union Building is home to the School of \nInformation Technology, the Web and Interactive \nCommunications office, and WGLT Radio.The Old Union \nBuilding opened in 1956 and was the original student \nunion on campus. It has also been called the Educational \nMedia Building and Media Services.President Strand named \nthis building Old Union in the 1990s. But we call that \nconnecting to spirit world. Which the old technology \nbuilt to connecting you to see the world \nthat does not exist in reality."))
 
-  stories.push(new Story("Felmley Hall of Science contains offices from the School of Biological Sciences, the Illinois State Planetarium, the Department of Health Sciences, and the Department of Geography, Geology, and the Environment. Felmley Hall of Science is named after David Felmley, president of Illinois State Normal University from 1900-1930. David Felmley was an advocate for the needs of students and faculty for three decades and worked to expand areas of curriculum. Felmley Hall opened in 1930. In 1962, the University received a grant from the National Science Foundation to assist with a $1.8 million annex. The science department has a secret hall room for all the dangerous chemical using stuff. Long times ago, our lead student was doing a dangerous lab overnight which turned out the chemical changed. Then he turned himself into monster science beast. You will not want to become like that and have to close yourself into a cage, never being out again."))
+  stories.push(new Story("Felmley Hall of Science contains offices from the \nSchool of Biological Sciences, the Illinois State \nPlanetarium, the Department of Health Sciences, and the \nDepartment of Geography, Geology, and the Environment. \nFelmley Hall of Science is named after David Felmley, \npresident of Illinois State Normal University from \n1900-1930. David Felmley was an advocate for the needs \nof students and faculty for three decades and worked to \nexpand areas of curriculum. Felmley Hall opened in 1930. \nIn 1962, the University received a grant from the National \nScience Foundation to assist with a $1.8 million annex. \nThe science department has a secret hall room for all \nthe dangerous chemical using stuff. Long times ago, our \nlead student was doing a dangerous lab overnight which \nturned out the chemical changed. Then he turned himself \ninto monster science beast. You will not want to become \nlike that and have to close yourself into a cage, never being \nout again."))
 
-  stories.push(new Story("The construction of the Center for Performing Arts cost $19.8 million and was completed and dedicated in the Fall of 2002. An 800-seat concert hall and a 450-seat theatre are the building's main features. As you could see, the most part of the building is built by large pieces of glasses. At night, you can see all the ghost around by this area which could stop by. You don’t want to look at the glass by the dark outside unless you wants to “talk” with your neighbor ghost."))
+  stories.push(new Story("The construction of the Center for Performing Arts cost $19.8 \nmillion and was completed and dedicated in the Fall of 2002. \nAn 800-seat concert hall and a 450-seat theatre are the \nbuilding's main features. As you could see, the most part \nof the building is built by large pieces of glasses. At \nnight, you can see all the ghost around by this area \nwhich could stop by. You don’t want to look at the glass \nby the dark outside unless you wants to “talk” \nwith your neighbor ghost."))
 
-  stories.push(new Story("The 118,000-square foot State Farm Hall of Business building, designed in the Georgian style of architecture, opened in January 2005. The facility blends the small college campus environment with a corporate presence and state-of-the art technologies. The COUNTRY Insurance and Financial Services Atrium, the central core of the building, was designed to reflect the modern, strategic focus of Corporate America. Those entering the building are greeted by a six-story, 1,000-plus square foot open area. A glass wall on five levels offers a picturesque view of the courtyard. The Atrium also serves as the crossroads between the building's classroom wing on the building's west side and the faculty/administrative wing on the first, second, and third levels on the building's east side. The building's four stories wrap around a courtyard in a 21st century version of the Oxford College model. Three arched openings from the Quad lead directly into the courtyard, a scenic location for informal study sessions, conversation, and meetings. University Street, on the south end of the quad. Business hall is the most beautiful building here at ISU. But its not only because the cost outside, but always it’s the ghost bank inside. Once the night has come, the whole building turned into a bank for the ghost storge their daily use and supplies."))
+  stories.push(new Story("The 118,000-square foot State Farm Hall of Business \nbuilding, designed in the Georgian style of architecture, \nopened in January 2005. The facility blends the small \ncollege campus environment with a corporate presence \nand state-of-the art technologies. The COUNTRY Insurance \nand Financial Services Atrium, the central core of the \nbuilding, was designed to reflect the modern, strategic focus \nof Corporate America. Those entering the building are greeted by a \nsix-story, 1,000-plus square foot open area. A glass wall on \nfive levels offers a picturesque view of the courtyard. \nThe Atrium also serves as the crossroads between the \nbuilding's classroom wing on the building's west side \nand the faculty/administrative wing on the first, \nsecond, and third levels on the building's east side. \nThe building's four stories wrap around a courtyard in \na 21st century version of the Oxford College model. \nThree arched openings from the Quad lead directly \ninto the courtyard, a scenic location for informal \nstudy sessions, conversation, and meetings. University \nStreet, on the south end of the quad. Business hall \nis the most beautiful building here at ISU. But its \nnot only because the cost outside, but always it’s the \nghost bank inside. Once the night has come, the whole \nbuilding turned into a bank for the ghost storge their \ndaily use and supplies."))
 
   // initialize accelerometer variables
   alpha = 0;
@@ -72,27 +72,30 @@ function draw() {
 
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
-  background('red');
+
   // fill('red');
   // rect(0, 0, 300, 200);
 
-  textAlign(LEFT);
-  textSize(20);
-  fill('black');
-  text("orientation data:", 25, 25);
-  textSize(15);
-  text("alpha: " + alpha, 25, 50);
-  text("beta: " + beta, 25, 70);
-  text("gamma: " + gamma, 25, 90);
-  textSize(20);
-  text("acceleration data:", 25, 125);
-  textSize(15);
-  text("permissionState =" + pstate1 + ", " + pstate2, 25, 145) ;
 
-  text("Ghost is around " + alphaGhost + " alpha, " + betaGhost + " beta", 25, 200)
 
   switch (myState) {
     case 0:
+    background('white');
+    textAlign(LEFT);
+    textSize(20);
+    fill('black');
+    text("orientation data:", 25, 25);
+    textSize(15);
+    text("alpha: " + alpha, 25, 50);
+    text("beta: " + beta, 25, 70);
+    text("gamma: " + gamma, 25, 90);
+    textSize(20);
+    text("acceleration data:", 25, 125);
+    textSize(15);
+    text("permissionState =" + pstate1 + ", " + pstate2, 25, 145) ;
+
+    text("Ghost is around " + alphaGhost + " alpha, " + betaGhost + " beta", 25, 200)
+
     if((alpha > alphaGhost) && (alpha < alphaGhost + 30) && (beta > betaGhost) && (beta < betaGhost + 30) ) {
       myState = 1;
       text("ghost!!!!!!!!!", 25, 175);
@@ -115,8 +118,9 @@ function draw() {
       break;
 
     case 2:
+      background('red');
       textSize(12);
-      text(stories[randomStory].story, 25, 220);
+      text(stories[randomStory].story, 25, 20);
       break;
   }
 
@@ -198,4 +202,8 @@ window.addEventListener('devicemotion', function(e) {
 
 function Story(words) {
   this.story = words;
+}
+
+function mouseReleased() {
+  myState = 2;
 }
