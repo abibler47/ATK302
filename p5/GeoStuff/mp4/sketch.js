@@ -21,7 +21,7 @@ function setup() {
   //fence = new geoFenceCircle(40.506229, -88.990537, 0.02); //sets geofence location to cva room 17
   createCanvas(displayWidth, displayHeight);
   num = 0;
-  intervalCurrentPosition(positionPing, 1000);
+  intervalCurrentPosition(positionPing(), 1000);
   places.push(new Place(40.50622797365503, -88.99051350503431, "CVA 17", .02, reggieImg)); // new Place object, for CVA room 17
   places.push(new Place(40.50715473783438, -88.99173550368103, "COB", .02, reggieImg)); // new Place object, for COB.... JUST SWITCHED TO NEW COORDINATES
 
@@ -90,7 +90,7 @@ function positionPing(position) {
   distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
 
   for (var i = 0; i < places.length; i++) {
-    if (places[i].fence.insideFence === true && ghost == true){
+    if (places[i].fence.insideFence == true && ghost == true){
       places[i].display();
       break; //should break out of the for loop?
       //text(places[i].desc + ' check1 ' + places[i].fence.insideFence, 10, 240 + (i * 28));
