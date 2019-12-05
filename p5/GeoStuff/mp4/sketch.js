@@ -100,7 +100,7 @@ function positionPing(position) {
 function Place(lat, long, desc, radius, reggieImg) {
   this.lat = lat;
   this.long = long;
-  this.fence = false;
+  // this.fence = false;
   this.desc = desc;
   this.radius = radius;
   this.fence = new geoFenceCircle(this.lat, this.long, this.radius); //sets geofence location to coordinates
