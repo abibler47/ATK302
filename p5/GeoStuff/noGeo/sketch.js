@@ -12,6 +12,7 @@ var stories = [];
 var alphaGhost, betaGhost;
 var ghostNum;
 var myState = 0;
+var randomStory;
 
 function preload() {
   locationData = getCurrentPosition();
@@ -59,6 +60,7 @@ function setup() {
   gamma = 0;
   alphaGhost = random(330);
   betaGhost = random(150);
+  randomStory = round(random(stories.length) - 0.5);
 
 }
 
@@ -114,7 +116,7 @@ function draw() {
 
     case 2:
       textSize(12);
-      text(stories[round(random(stories.length) - 0.5)].story, 25, 220);
+      text(stories[randomStory].story, 25, 220);
       break;
   }
 
