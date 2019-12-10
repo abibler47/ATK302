@@ -240,6 +240,6 @@ function Story(words, pic) {
   this.picture = pic;
 }
 
-function mouseReleased() {
-  myState = 1;
-}
+// function mouseReleased() {
+//   myState = 1;
+// }
